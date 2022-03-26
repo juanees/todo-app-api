@@ -1,6 +1,6 @@
 # Todo App API
 
-Simple TODO Backend app built using
+Simple TODO api built using
 
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) 
 
@@ -40,6 +40,10 @@ Start the server
   GET /api/v1/todos
 ```
 
+```bash
+   curl --location --request GET 'localhost:8080/api/v1/todos'
+```
+
 #### Get todo
 
 ```http
@@ -48,7 +52,7 @@ Start the server
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of todo to fetch |
+| `code`      | `uuid` | **Required**. Code of todo to fetch |
 
 ```bash
    curl --location --request GET 'localhost:8080/api/v1/todos/228fd7d1-cec0-4486-ae0e-4db638d302db'
@@ -78,7 +82,7 @@ Start the server
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of todo to update |
+| `code`      | `uuid` | **Required**. Code of todo to update |
 
 
 ```bash
@@ -99,7 +103,7 @@ Start the server
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of todo to delete |
+| `code`      | `uuid` | **Required**. Code of todo to delete |
 
 
 ```bash

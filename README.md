@@ -1,6 +1,7 @@
 # Todo App API
 
 Simple TODO Backend app built using
+
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) 
 
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -10,7 +11,7 @@ Simple TODO Backend app built using
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/juanees/todo-app-api.git
 ```
 
 Go to the project directory
